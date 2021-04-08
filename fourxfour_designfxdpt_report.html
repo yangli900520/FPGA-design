@@ -1,0 +1,1232 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="https://www.mathworks.com/help/schema/MathWorksDocPage">
+<head>
+<title>HDL Check Report for 'fourxfour_designfxdpt_givens/fourxfour_designfxdpt'</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script type="text/javascript" src="file:///usr/local/MATLAB/R2018b/toolbox/hdlcoder/hdlcommon/js_css/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="file:///usr/local/MATLAB/R2018b/toolbox/hdlcoder/hdlcommon/js_css/docscripts.js"></script>
+        
+        <link href="file:///usr/local/MATLAB/R2018b/toolbox/hdlcoder/hdlcommon/js_css/ice_960.css" rel="stylesheet" type="text/css">
+        <link href="file:///usr/local/MATLAB/R2018b/toolbox/hdlcoder/hdlcommon/js_css/HDLsite5.css" rel="stylesheet" type="text/css">
+        <link href="file:///usr/local/MATLAB/R2018b/toolbox/hdlcoder/hdlcommon/js_css/ice_doc_center.css" rel="stylesheet" type="text/css">
+        <link href="file:///usr/local/MATLAB/R2018b/toolbox/hdlcoder/hdlcommon/js_css/ice_doc_center_installed.css" rel="stylesheet" type="text/css">
+        <link href="file:///usr/local/MATLAB/R2018b/toolbox/hdlcoder/hdlcommon/js_css/ice_doc_center_print.css" rel="stylesheet" type="text/css" media="print">
+        <script type="text/javascript">
+            if (navigator.appName != "ICEbrowser") {
+            var cssStyleSheets = $("link").filter(function(){
+            var href = $(this).attr('href');
+            return href.indexOf("ice_doc_center_print.css") == -1});
+            var hrefElements = $.map(cssStyleSheets, function(elem) {
+            var href = $(elem).attr('href');
+            var hrefArray = href.split("/");
+            hrefArray[hrefArray.length - 1] = hrefArray[hrefArray.length - 1].replace("ice_", "");
+            return {
+            href: hrefArray.join("/"),
+            media: $(elem).attr('media')
+            };
+            });
+            cssStyleSheets.remove();
+            for (var i = 0; i < hrefElements.length; i++) {
+            if ($.browser.msie && $.browser.version <= 8) {
+            document.createStyleSheet(hrefElements[i].href);
+            } else {
+            var link = $('<link rel="stylesheet" href=' + hrefElements[i].href + ' type="text/css" />');
+            if (hrefElements[i].media) {
+            link.attr('media', hrefElements[i].media);
+            }
+            $('head').append(link);
+            }
+            }
+            }
+    </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<div class="container_192">
+<div class="grid_192">
+ <div class="page_container"><div class="content_frame">
+<h1>HDL Code Generation Check Report for 'fourxfour_designfxdpt_givens/fourxfour_designfxdpt'
+<a href="matlab:open_system('fourxfour_designfxdpt_givens/fourxfour_designfxdpt');">open model 'fourxfour_designfxdpt_givens/fourxfour_designfxdpt'</a><BR>
+Generated on 2019-10-01 15:17:02</h1>
+<H2>HDL check for 'fourxfour_designfxdpt_givens' complete with 0 errors, 179 warnings, and 13 messages.</H2><BR>
+<H3>The following table describes blocks for which errors, warnings or messages were reported.</H3><BR>
+<TABLE>
+<TR><TD> <B>Simulink Blocks and resources</B> </TD><TD> <B>Level</B> </TD><TD> <B>Description</B> </TD></TR><TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:validate:DelayBalancingOff" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');open_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]))">fourxfour_designfxdpt_givens</a>
+</TD>
+<TD>Warning</TD>
+<TD><a href="matlab:configset.internal.open('fourxfour_designfxdpt_givens','BalanceDelays')">'BalanceDelays'</a> is set to 'Off' for the model. This can introduce a difference in numerics between the original model and generated model when automatic pipelines are inserted and not balanced. To verify the numerics, enable <a href="matlab:configset.internal.open('fourxfour_designfxdpt_givens','GenerateValidationModel')">'GenerateValidationModel'</a>, generate HDL code, and open and simulate the validation model.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="HDLShared:hdlshared:genericfamilynotcharacterized" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');open_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]))">fourxfour_designfxdpt_givens</a>
+</TD>
+<TD>Warning</TD>
+<TD>Family zynq ultrascale+ not characterized. Using default value, SynthesisToolChipFamily=virtex7 and SynthesisToolSpeedValue=-1, for adaptive pipelining.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 47 80 114 111 100 117 99 116 52]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/Product4</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/Product4, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 47 80 114 111 100 117 99 116 53]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/Product5</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/Product5, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 47 80 114 111 100 117 99 116 54]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/Product6</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/Product6, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 47 80 114 111 100 117 99 116 55]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/Product7</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/Product7, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 47 80 114 111 100 117 99 116 56]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/Product8</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/Product8, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 49 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 49 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 49 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 49 47 80 114 111 100 117 99 116 52]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/Product4</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/Product4, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 49 47 80 114 111 100 117 99 116 53]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/Product5</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/Product5, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 49 47 80 114 111 100 117 99 116 54]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/Product6</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/Product6, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 49 47 80 114 111 100 117 99 116 55]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/Product7</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/Product7, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 49 47 80 114 111 100 117 99 116 56]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/Product8</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/Product8, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 50 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 50 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 50 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 50 47 80 114 111 100 117 99 116 52]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/Product4</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/Product4, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 50 47 80 114 111 100 117 99 116 53]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/Product5</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/Product5, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 50 47 80 114 111 100 117 99 116 54]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/Product6</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/Product6, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 50 47 80 114 111 100 117 99 116 55]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/Product7</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/Product7, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 50 47 80 114 111 100 117 99 116 56]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/Product8</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/Product8, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 51 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 51 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 51 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 51 47 80 114 111 100 117 99 116 52]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/Product4</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/Product4, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 51 47 80 114 111 100 117 99 116 53]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/Product5</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/Product5, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 51 47 80 114 111 100 117 99 116 54]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/Product6</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/Product6, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 51 47 80 114 111 100 117 99 116 55]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/Product7</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/Product7, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 51 47 80 114 111 100 117 99 116 56]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/Product8</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/Product8, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 47 99 42 114 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/c*r_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/c*r_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 47 99 42 114 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/c*r_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/c*r_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 47 99 42 117 105 110 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/c*uin_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/c*uin_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 47 99 42 117 105 110 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/c*uin_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/c*uin_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/complex_mul/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/complex_mul/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/complex_mul/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/complex_mul/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/complex_mul/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/complex_mul/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/complex_mul/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/complex_mul/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/complex_mul1/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/complex_mul1/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/complex_mul1/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/complex_mul1/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/complex_mul1/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/complex_mul1/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/complex_mul1/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell/complex_mul1/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 49 47 99 42 114 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/c*r_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/c*r_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 49 47 99 42 114 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/c*r_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/c*r_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 49 47 99 42 117 105 110 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/c*uin_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/c*uin_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 49 47 99 42 117 105 110 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/c*uin_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/c*uin_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/complex_mul/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/complex_mul/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/complex_mul/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/complex_mul/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/complex_mul/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/complex_mul/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/complex_mul/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/complex_mul/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/complex_mul1/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/complex_mul1/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/complex_mul1/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/complex_mul1/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/complex_mul1/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/complex_mul1/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/complex_mul1/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell1/complex_mul1/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 50 47 99 42 114 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/c*r_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/c*r_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 50 47 99 42 114 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/c*r_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/c*r_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 50 47 99 42 117 105 110 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/c*uin_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/c*uin_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 50 47 99 42 117 105 110 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/c*uin_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/c*uin_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/complex_mul/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/complex_mul/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/complex_mul/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/complex_mul/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/complex_mul/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/complex_mul/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/complex_mul/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/complex_mul/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/complex_mul1/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/complex_mul1/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/complex_mul1/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/complex_mul1/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/complex_mul1/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/complex_mul1/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/complex_mul1/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell2/complex_mul1/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 51 47 99 42 114 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/c*r_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/c*r_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 51 47 99 42 114 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/c*r_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/c*r_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 51 47 99 42 117 105 110 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/c*uin_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/c*uin_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 51 47 99 42 117 105 110 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/c*uin_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/c*uin_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/complex_mul/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/complex_mul/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/complex_mul/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/complex_mul/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/complex_mul/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/complex_mul/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/complex_mul/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/complex_mul/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/complex_mul1/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/complex_mul1/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/complex_mul1/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/complex_mul1/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/complex_mul1/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/complex_mul1/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 66 87 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/complex_mul1/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_BW_Cell3/complex_mul1/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 47 99 42 114 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/c*r_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/c*r_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 47 99 42 114 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/c*r_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/c*r_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 47 99 42 117 105 110 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/c*uin_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/c*uin_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 47 99 42 117 105 110 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/c*uin_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/c*uin_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul1/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul1/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul1/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul1/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul1/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul1/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul1/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul1/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul_rz1/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul_rz1/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul_rz1/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul_rz1/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul_rz1/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul_rz1/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul_rz1/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell/complex_mul_rz1/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 49 47 99 42 114 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/c*r_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/c*r_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 49 47 99 42 114 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/c*r_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/c*r_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 49 47 99 42 117 105 110 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/c*uin_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/c*uin_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 49 47 99 42 117 105 110 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/c*uin_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/c*uin_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul1/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul1/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul1/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul1/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul1/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul1/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul1/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul1/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul_rz1/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul_rz1/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul_rz1/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul_rz1/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul_rz1/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul_rz1/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 49 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul_rz1/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell1/complex_mul_rz1/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 50 47 99 42 114 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/c*r_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/c*r_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 50 47 99 42 114 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/c*r_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/c*r_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 50 47 99 42 117 105 110 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/c*uin_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/c*uin_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 50 47 99 42 117 105 110 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/c*uin_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/c*uin_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul1/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul1/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul1/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul1/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul1/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul1/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul1/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul1/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul_rz1/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul_rz1/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul_rz1/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul_rz1/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul_rz1/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul_rz1/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 50 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul_rz1/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell2/complex_mul_rz1/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 51 47 99 42 114 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/c*r_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/c*r_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 51 47 99 42 114 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/c*r_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/c*r_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 51 47 99 42 117 105 110 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/c*uin_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/c*uin_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 51 47 99 42 117 105 110 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/c*uin_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/c*uin_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul1/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul1/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul1/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul1/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul1/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul1/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul1/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul1/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul_rz1/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul_rz1/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul_rz1/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul_rz1/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul_rz1/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul_rz1/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 51 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul_rz1/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell3/complex_mul_rz1/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 52 47 99 42 114 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/c*r_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/c*r_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 52 47 99 42 114 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/c*r_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/c*r_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 52 47 99 42 117 105 110 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/c*uin_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/c*uin_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 52 47 99 42 117 105 110 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/c*uin_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/c*uin_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 52 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 52 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 52 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 52 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 52 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul1/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul1/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 52 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul1/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul1/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 52 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul1/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul1/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 52 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul1/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul1/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 52 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul_rz1/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul_rz1/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 52 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul_rz1/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul_rz1/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 52 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul_rz1/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul_rz1/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 52 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul_rz1/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell4/complex_mul_rz1/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 53 47 99 42 114 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/c*r_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/c*r_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 53 47 99 42 114 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/c*r_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/c*r_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 53 47 99 42 117 105 110 95 105]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/c*uin_i</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/c*uin_i, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 53 47 99 42 117 105 110 95 114]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/c*uin_r</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/c*uin_r, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 53 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 53 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 53 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 53 47 99 111 109 112 108 101 120 95 109 117 108 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 53 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul1/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul1/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 53 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul1/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul1/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 53 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul1/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul1/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 53 47 99 111 109 112 108 101 120 95 109 117 108 49 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul1/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul1/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 53 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul_rz1/Product</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul_rz1/Product, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 53 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116 49]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul_rz1/Product1</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul_rz1/Product1, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 53 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116 50]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul_rz1/Product2</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul_rz1/Product2, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:optimization:HwModeCantBuyRegisters" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 73 110 116 101 114 110 97 108 95 81 82 95 67 101 108 108 53 47 99 111 109 112 108 101 120 95 109 117 108 95 114 122 49 47 80 114 111 100 117 99 116 51]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul_rz1/Product3</a>
+</TD>
+<TD>Warning</TD>
+<TD>Unable to insert required number of pipeline registers because the block, fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Internal_QR_Cell5/complex_mul_rz1/Product3, is in a feedback path. Number of registers required: 2; number of registers inserted: 0.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:engine:ValMdlNoDelayBalance" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');open_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]))">fourxfour_designfxdpt_givens</a>
+</TD>
+<TD>Warning</TD>
+<TD>Delay balancing is turned off. This may result in numerical mismatches in the validation model.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:validate:LatencyMismatch" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 47 72 68 76 32 82 101 99 105 112 114 111 99 97 108]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/HDL Reciprocal</a>
+</TD>
+<TD>Message</TD>
+<TD>After HDL code generation, fixed-point block HDL Reciprocal can have additional latency when compared to the Simulink model. For details, view the generated model.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:validate:NumericsMismatch" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 47 72 68 76 32 82 101 99 105 112 114 111 99 97 108]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/HDL Reciprocal</a>
+</TD>
+<TD>Message</TD>
+<TD>After HDL code generation, block HDL Reciprocal can have numeric differences when compared to the Simulink model. For details, view the generated model.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:validate:ValidationNumericMismatch" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 47 72 68 76 32 82 101 99 105 112 114 111 99 97 108]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell/HDL Reciprocal</a>
+</TD>
+<TD>Message</TD>
+<TD>'HDL Reciprocal' introduces a delay before the block in the generated model. This may introduce simulation mismatch in the initial cycles of the generated validation model.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:validate:LatencyMismatch" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 49 47 72 68 76 32 82 101 99 105 112 114 111 99 97 108]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/HDL Reciprocal</a>
+</TD>
+<TD>Message</TD>
+<TD>After HDL code generation, fixed-point block HDL Reciprocal can have additional latency when compared to the Simulink model. For details, view the generated model.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:validate:NumericsMismatch" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 49 47 72 68 76 32 82 101 99 105 112 114 111 99 97 108]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/HDL Reciprocal</a>
+</TD>
+<TD>Message</TD>
+<TD>After HDL code generation, block HDL Reciprocal can have numeric differences when compared to the Simulink model. For details, view the generated model.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:validate:ValidationNumericMismatch" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 49 47 72 68 76 32 82 101 99 105 112 114 111 99 97 108]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell1/HDL Reciprocal</a>
+</TD>
+<TD>Message</TD>
+<TD>'HDL Reciprocal' introduces a delay before the block in the generated model. This may introduce simulation mismatch in the initial cycles of the generated validation model.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:validate:LatencyMismatch" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 50 47 72 68 76 32 82 101 99 105 112 114 111 99 97 108]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/HDL Reciprocal</a>
+</TD>
+<TD>Message</TD>
+<TD>After HDL code generation, fixed-point block HDL Reciprocal can have additional latency when compared to the Simulink model. For details, view the generated model.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:validate:NumericsMismatch" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 50 47 72 68 76 32 82 101 99 105 112 114 111 99 97 108]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/HDL Reciprocal</a>
+</TD>
+<TD>Message</TD>
+<TD>After HDL code generation, block HDL Reciprocal can have numeric differences when compared to the Simulink model. For details, view the generated model.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:validate:ValidationNumericMismatch" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 50 47 72 68 76 32 82 101 99 105 112 114 111 99 97 108]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell2/HDL Reciprocal</a>
+</TD>
+<TD>Message</TD>
+<TD>'HDL Reciprocal' introduces a delay before the block in the generated model. This may introduce simulation mismatch in the initial cycles of the generated validation model.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:validate:LatencyMismatch" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 51 47 72 68 76 32 82 101 99 105 112 114 111 99 97 108]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/HDL Reciprocal</a>
+</TD>
+<TD>Message</TD>
+<TD>After HDL code generation, fixed-point block HDL Reciprocal can have additional latency when compared to the Simulink model. For details, view the generated model.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:validate:NumericsMismatch" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 51 47 72 68 76 32 82 101 99 105 112 114 111 99 97 108]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/HDL Reciprocal</a>
+</TD>
+<TD>Message</TD>
+<TD>After HDL code generation, block HDL Reciprocal can have numeric differences when compared to the Simulink model. For details, view the generated model.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:validate:ValidationNumericMismatch" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');hilite_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115 47 102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 47 71 105 118 101 110 115 95 66 111 117 110 100 97 114 121 95 67 101 108 108 51 47 72 68 76 32 82 101 99 105 112 114 111 99 97 108]))">fourxfour_designfxdpt_givens/fourxfour_designfxdpt/Givens_Boundary_Cell3/HDL Reciprocal</a>
+</TD>
+<TD>Message</TD>
+<TD>'HDL Reciprocal' introduces a delay before the block in the generated model. This may introduce simulation mismatch in the initial cycles of the generated validation model.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:hdldisp:OversampleMessage" href="matlab:hilite(get_param(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]),'object'),'none');open_system(char([102 111 117 114 120 102 111 117 114 95 100 101 115 105 103 110 102 120 100 112 116 95 103 105 118 101 110 115]))">fourxfour_designfxdpt_givens</a>
+</TD>
+<TD>Message</TD>
+<TD>MESSAGE: The design requires 2 times faster clock with respect to the base rate = 1e-08.</TD>
+</TR>
+</TABLE>
+<BR><BR> </div></div></div></div>
+                    <div class="grid_192">
+                        <div class="footer_container">
+                            <div class="footer">
+                                <ul class="footernav">
+                                    <li class="footernav_trademarks"><a href="/usr/local/MATLAB/R2018b/help/acknowledgments.html">Acknowledgments</a></li>
+                                    <li class="footernav_trademarks"><a href="/usr/local/MATLAB/R2018b/trademarks.txt">Trademarks</a></li>
+                                    <li class="footernav_patents"><a href="/usr/local/MATLAB/R2018b/patents.txt">Patents</a></li>
+                                    <li class="footernav_help"><a href="/usr/local/MATLAB/R2018b/license_agreement.txt">Terms of Use</a></li>
+                                </ul>
+                                <div class="copyright">&copy; 1994-2019 The MathWorks, Inc.</div>
+                            </div>
+                        </div>
+                    </div>
+
+        <script type="text/javascript">
+
+$(document).ready( setTimeout( function () {
+                   $(".expandAllLink").trigger('click');
+            }, 50 ) );
+
+        </script>
+        
+</body>
+</html>
